@@ -1,0 +1,306 @@
+:root {
+    --token: #ddd;
+    --zOffset: 0;
+    --puckWidth: calc(min(calc(0.125 * 100vw), calc(0.125 * 100vh)) * 0.9);
+    --row: 1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0 auto;
+    counter-reset: tileCounter;
+    counter-reset: col_1;
+    counter-reset: col_2;
+    counter-reset: col_3;
+    counter-reset: col_4;
+    counter-reset: col_5;
+    counter-reset: col_6;
+    counter-reset: col_7;
+}
+.board {
+    height: 100vh;
+    width: calc(9.5 * calc(4px + var(--puckWidth)));
+    background-color: #55ccff;
+    display: block;
+}
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.red:checked {
+    background-color: #f00;
+}
+.yellow:checked {
+    background-color: #ff0;
+}
+.turn {
+    position: absolute;
+    left: 30px;
+    --turn: 1;
+}
+input {
+    border-radius: 50%;
+    width: var(--puckWidth);
+    height: var(--puckWidth);
+    margin-right: calc(var(--puckWidth) * 0.1);
+    color: #ff0;
+    position: relative;
+    appearance: none;
+    background-color: #ddd;
+    z-index: calc(59 - var(--turn));
+}
+:checked {
+    animation-fill-mode: forwards;
+    background: #ffff00;
+}
+
+.dropper {
+    :has(.turn:nth-child(2 of .turn:has(.col1:checked))) {
+        background-color: #ddd;
+    }
+}
+
+.dropper .turn:nth-child(2 of .turn:has(.col1:checked)) {
+    --row: 2;
+}
+.dropper .turn:nth-child(3 of .turn:has(.col1:checked)) {
+    --row: 3;
+}
+.dropper .turn:nth-child(4 of .turn:has(.col1:checked)) {
+    --row: 4;
+}
+.dropper .turn:nth-child(5 of .turn:has(.col1:checked)) {
+    --row: 5;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col1:checked)) {
+    --row: 6;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col1:checked)) ~ .turn .col1 {
+    z-index: 1;
+    background-color: transparent;
+}
+
+.dropper .turn:nth-child(2 of .turn:has(.col2:checked)) {
+    --row: 2;
+}
+.dropper .turn:nth-child(3 of .turn:has(.col2:checked)) {
+    --row: 3;
+}
+.dropper .turn:nth-child(4 of .turn:has(.col2:checked)) {
+    --row: 4;
+}
+.dropper .turn:nth-child(5 of .turn:has(.col2:checked)) {
+    --row: 5;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col2:checked)) {
+    --row: 6;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col2:checked)) ~ .turn .col2 {
+    z-index: 1;
+    background-color: transparent;
+}
+
+.dropper .turn:nth-child(2 of .turn:has(.col3:checked)) {
+    --row: 2;
+}
+.dropper .turn:nth-child(3 of .turn:has(.col3:checked)) {
+    --row: 3;
+}
+.dropper .turn:nth-child(4 of .turn:has(.col3:checked)) {
+    --row: 4;
+}
+.dropper .turn:nth-child(5 of .turn:has(.col3:checked)) {
+    --row: 5;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col3:checked)) {
+    --row: 6;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col3:checked)) ~ .turn .col3 {
+    z-index: 1;
+    background-color: transparent;
+}
+
+.dropper .turn:nth-child(2 of .turn:has(.col4:checked)) {
+    --row: 2;
+}
+.dropper .turn:nth-child(3 of .turn:has(.col4:checked)) {
+    --row: 3;
+}
+.dropper .turn:nth-child(4 of .turn:has(.col4:checked)) {
+    --row: 4;
+}
+.dropper .turn:nth-child(5 of .turn:has(.col4:checked)) {
+    --row: 5;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col4:checked)) {
+    --row: 6;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col4:checked)) ~ .turn .col4 {
+    z-index: 1;
+    background-color: transparent;
+}
+
+.dropper .turn:nth-child(2 of .turn:has(.col5:checked)) {
+    --row: 2;
+}
+.dropper .turn:nth-child(3 of .turn:has(.col5:checked)) {
+    --row: 3;
+}
+.dropper .turn:nth-child(4 of .turn:has(.col5:checked)) {
+    --row: 4;
+}
+.dropper .turn:nth-child(5 of .turn:has(.col5:checked)) {
+    --row: 5;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col5:checked)) {
+    --row: 6;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col5:checked)) ~ .turn .col5 {
+    z-index: 1;
+    background-color: transparent;
+}
+
+.dropper .turn:nth-child(2 of .turn:has(.col6:checked)) {
+    --row: 2;
+}
+.dropper .turn:nth-child(3 of .turn:has(.col6:checked)) {
+    --row: 3;
+}
+.dropper .turn:nth-child(4 of .turn:has(.col6:checked)) {
+    --row: 4;
+}
+.dropper .turn:nth-child(5 of .turn:has(.col6:checked)) {
+    --row: 5;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col6:checked)) {
+    --row: 6;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col6:checked)) ~ .turn .col6 {
+    z-index: 1;
+    background-color: transparent;
+}
+
+.dropper .turn:nth-child(2 of .turn:has(.col7:checked)) {
+    --row: 2;
+}
+.dropper .turn:nth-child(3 of .turn:has(.col7:checked)) {
+    --row: 3;
+}
+.dropper .turn:nth-child(4 of .turn:has(.col7:checked)) {
+    --row: 4;
+}
+.dropper .turn:nth-child(5 of .turn:has(.col7:checked)) {
+    --row: 5;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col7:checked)) {
+    --row: 6;
+}
+.dropper .turn:nth-child(6 of .turn:has(.col7:checked)) ~ .turn .col7 {
+    z-index: 1;
+    background-color: transparent;
+}
+.turn:has(input:checked) {
+    background: transparent;
+    --puckRow: calc((var(--row) - 1) * (var(--puckWidth) * 1.3));
+    animation: drop calc(1s - calc(0.166s * calc((var(--row) - 1))));
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+.turn:has(input:checked) input:not(:checked) {
+    background-color: transparent;
+}
+.turn:has(input:checked) input:checked.red {
+    background-color: #f00;
+}
+.turn:has(input:checked) input:checked.yellow {
+    background-color: #ff0;
+}
+
+.col1:has(input:checked) {
+    color: green;
+}
+
+@keyframes drop {
+    from {
+        bottom: 100%;
+    }
+    to {
+        bottom: var(--puckRow, 100%);
+    }
+}
+
+.cover {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0;
+    display: block;
+}
+
+input:checked {
+    counter-increment: tileCounter;
+}
+
+h1 {
+    font-size: xx-large;
+    background-color: $yellow;
+}
+.total_count::after {
+    content: counter(tileCounter);
+}
+
+.dropper
+    .turn:nth-child(n - 3 of .turn:has(.col7:checked:is(:not(.yellow))))
+    ~ .turn:nth-child(n - 2 of .turn:has(.col7:checked:is(:not(.yellow))))
+    ~ .turn:nth-child(n - 1 of .turn:has(.col7:checked:is(:not(.yellow))))
+    ~ .turn:nth-child(n + 4 of .turn:has(.col7:checked:is(.red))) {
+    background-color: darkviolet;
+}
+
+.dropper
+    .turn:nth-child(1 of .turn:has(.col1:checked))
+    .red
+    ~ .turn:nth-child(1 of .turn:has(.col2:checked))
+    .red
+    ~ .turn:nth-child(1 of .turn:has(.col3:checked))
+    .red
+    ~ .turn:nth-child(1 of .turn:has(.col4:checked))
+    .red {
+    background-color: fuchsia;
+}
+
+.dropper
+    .turn:nth-child(1 of .turn:has(.col1:checked))
+    .turn:nth-child(1 of .turn:has(.col2:checked))
+    .turn:nth-child(1 of .turn:has(.col3:checked))
+    .turn:nth-child(1 of .turn:has(.col4:checked)) {
+    background-color: pink;
+}
+
+.dropper
+    .turn:nth-child(n + 1 of .turn:has(.col6:checked)):has(.yellow)
+    ~ .turn:nth-child(n + 2 of .turn:has(.col6:checked)):has(.yellow)
+    ~ .turn:nth-child(n + 3 of .turn:has(.col6:checked)):has(.yellow)
+    ~ .turn:nth-child(n + 4 of .turn:has(.col6:checked)):has(.yellow) {
+    background-color: aliceblue;
+}
+
+dropper
+    .turn:nth-child(1 of .turn:has(.col4:checked)):has(.red)
+    ~ .turn:nth-child(2 of .turn:has(.col4:checked)):has(.red)
+    ~ .turn:nth-child(3 of .turn:has(.col4:checked)):has(.red)
+    ~ .turn:nth-child(4 of .turn:has(.col4:checked)):has(.red) {
+    background-color: chartreuse;
+}

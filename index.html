@@ -1,0 +1,390 @@
+<link rel="stylesheet" href="connect_4.css" />
+<head>
+    <meta content="height=device-height" />
+</head>
+<style></style>
+<h1>CSS connect 4</h1>
+
+<div id="container" class="board">
+    <div class="dropper">
+        <span class="turn" style="--turn: 1">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 2">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 3">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 4">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 5">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 6">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 7">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 8">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 9">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 10">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 11">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 12">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 13">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 14">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 15">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 16">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 17">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 18">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 19">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 20">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 21">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 22">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 23">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 24">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 25">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 26">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 27">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 28">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 29">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 30">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 31">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 32">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 33">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 34">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 35">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 36">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 37">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 38">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 39">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 40">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 41">
+            <input class="col1 red" type="checkbox" />
+            <input class="col2 red" type="checkbox" />
+            <input class="col3 red" type="checkbox" />
+            <input class="col4 red" type="checkbox" />
+            <input class="col5 red" type="checkbox" />
+            <input class="col6 red" type="checkbox" />
+            <input class="col7 red" type="checkbox" />
+        </span>
+        <span class="turn" style="--turn: 42">
+            <input class="col1 yellow" type="checkbox" />
+            <input class="col2 yellow" type="checkbox" />
+            <input class="col3 yellow" type="checkbox" />
+            <input class="col4 yellow" type="checkbox" />
+            <input class="col5 yellow" type="checkbox" />
+            <input class="col6 yellow" type="checkbox" />
+            <input class="col7 yellow" type="checkbox" />
+        </span>
+    </div>
+    <div class="cover"></div>
+</div>
