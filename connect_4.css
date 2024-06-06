@@ -25,7 +25,7 @@ body {
     counter-reset: col_7;
 }
 .board {
-    height: 100vh;
+    height: calc(9.5 * calc(4px + var(--puckWidth)));
     width: calc(9.5 * calc(4px + var(--puckWidth)));
     background-color: #55ccff;
     display: block;
@@ -261,6 +261,8 @@ h1 {
     content: counter(tileCounter);
 }
 
+/* Attempts at win detection */
+/*
 .dropper
     .turn:nth-child(n - 3 of .turn:has(.col7:checked:is(:not(.yellow))))
     ~ .turn:nth-child(n - 2 of .turn:has(.col7:checked:is(:not(.yellow))))
@@ -304,3 +306,4 @@ dropper
     ~ .turn:nth-child(4 of .turn:has(.col4:checked)):has(.red) {
     background-color: chartreuse;
 }
+*/
