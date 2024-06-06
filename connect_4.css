@@ -234,7 +234,7 @@ input {
         bottom: 100%;
     }
     to {
-        bottom: var(--puckRow, 100%);
+        bottom: var(--puckRow, calc(9.5 * calc(4px + var(--puckWidth))));
     }
 }
 
