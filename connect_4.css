@@ -209,7 +209,7 @@ input {
 }
 .turn:has(input:checked) {
     background: transparent;
-    --puckRow: calc((var(--row) - 1) * (var(--puckWidth) * 1.3));
+    --puckRow: calc(((var(--row) - 1) * (var(--puckWidth) * 1.3)) + calc(9.5 * calc(4px + var(--puckWidth))));
     animation: drop calc(1s - calc(0.166s * calc((var(--row) - 1))));
     animation-fill-mode: forwards;
     z-index: 1;
