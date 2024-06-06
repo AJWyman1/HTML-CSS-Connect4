@@ -25,7 +25,7 @@ body {
     counter-reset: col_7;
 }
 .board {
-    height: 100vh;
+    height: calc(9.5 * calc(4px + var(--puckWidth)));
     width: calc(9.5 * calc(4px + var(--puckWidth)));
     background-color: #55ccff;
     display: block;
