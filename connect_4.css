@@ -3,6 +3,7 @@
     --zOffset: 0;
     --puckWidth: calc(min(calc(0.125 * 100vw), calc(0.125 * 100vh)) * 0.9);
     --row: 1;
+    --height: calc(9.5 * calc(4px + var(--puckWidth)));
 }
 * {
     margin: 0;
@@ -234,7 +235,7 @@ input {
         bottom: 100%;
     }
     to {
-        bottom: var(--puckRow, 100%);
+        bottom: var(--puckRow, --height);
     }
 }
 
