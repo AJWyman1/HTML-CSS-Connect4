@@ -17,12 +17,13 @@ This project showcases a web-based Connect 4 game built entirely with HTML and C
 - Responsive design for various screen sizes
 - Pure HTML and CSS implementation
 - Player vs. Player mode
+- Animated puck drops
 
 ## Link to Live Version
 You can try out the game by visiting the [live version here](https://ajwyman1.github.io/HTML-CSS-Connect4/).
 
 ## Inspiration
-The inspiration for this project came from a desire to explore the capabilities of HTML and CSS without relying on JavaScript. It was a fun challenge to see how far these technologies could be pushed to create a fully functional game. This project serves as a demonstration of the creative possibilities and the potential of HTML and CSS in web development.
+The inspiration for this project came from a desire to explore the capabilities of HTML and CSS without relying on JavaScript. It was a fun challenge to see how far these technologies could be pushed to create a fully functional game. 
 
 ## TODO
 - Explore adding a bot for single-player mode.
