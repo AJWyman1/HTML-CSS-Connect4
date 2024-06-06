@@ -235,8 +235,7 @@ input {
         bottom: 100%;
     }
     to {
-        display: inline-block;
-        vertical-align:bottom;
+        bottom: var(--puckRow, 0);
     }
 }
 
