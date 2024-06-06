@@ -235,7 +235,7 @@ input {
         bottom: 100%;
     }
     to {
-        bottom: var(--puckRow, --height);
+        bottom: var(--puckRow, var(--height));
     }
 }
 
